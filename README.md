@@ -40,7 +40,7 @@ setelah saya Mengatur navigasi ini hasilnya
 ### Membuat hero panel
 
 ini hasil setelah dijalankan
-[img](ss/ss2.5.png)
+![img](ss/ss2.5.png)
 
 ### Kodenya
 
@@ -285,3 +285,175 @@ pretium ac.</p>
 => buat single layout yang berisi deskripsi, portfolio, dll
 2. Tambahkan layout untuk menu Contact
 => yang berisi form isian: nama, email, message, dll
+
+# Jawaban
+1. Ini Hasil Jawabannya<br>
+Html
+```<div class="about">
+			<div>
+				<h1 class="title">About me</h1>
+				<br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+			</div>
+			<div>
+				<img class="avatar" src="image.jpeg">
+			</div>
+        </div>
+```
+Css
+```/* layout About */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4e4e5;
+  clear: both;
+  padding: 35px;
+  line-height: 25px;
+}
+
+.avatar {
+  width: 110px;
+  border-radius: 50%;
+}
+```
+![img](ss/ssjawaban1.png)
+2. Ini Hasilnya Jawabannya<br>
+Html
+```<div class="kontak-body">
+            <h1>Contact</h1>
+            <form class="kontak-form-class">
+              <div class="kontak-form-group">
+                <label for="Name" class="kontak-label">Nama</label>
+                <div class="kontak-input-group">
+                  <input type="text" id="Name" name="Name" class="kontak-form-control" required>
+                </div>
+              </div>
+    
+              <div class="kontak-form-group">
+                <label for="Name" class="kontak-label">Email</label>
+                <div class="kontak-input-group">
+                  <input type="text" id="Name" name="Name" class="kontak-form-control" required>
+                </div>
+              </div>
+    
+              <div class="kontak-form-group">
+                <label for="Message" class="kontak-label">Message</label>
+                <div class="kontak-input-group">
+                  <textarea id="Message" name="Message" class="kontak-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+              </div>
+    
+              <div class="kontak-form-group">
+                <button type="submit" class="kontak-btn kontak-btn-primary kontak-btn-lg kontak-btn-block">Send Message</button>
+              </div>
+            </form>
+              </div>
+```
+Css
+```/* Layout Kontak */
+.kontak-body {
+  margin: 0;
+  font-family: -apple-system, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  padding: 30px;
+  padding-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  max-width: 100%;
+}
+.kontak-form-group {
+  margin-bottom: 1rem;
+}
+
+.kontak-input-group {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+.kontak-form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  outline: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.kontak-form-control:focus {
+  border: 1px solid #313131;
+}
+
+textarea.kontak-form-control {
+  height: auto;
+}
+
+label.kontak-label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.kontak-btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.kontak-btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.kontak-btn-lg,
+.kontak-btn-group-lg > .kontak-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+input[type="submit"].kontak-btn-block,
+input[type="reset"].kontak-btn-block,
+input[type="button"].kontak-btn-block {
+  width: 100%;
+}
+```
+![img](ss/ssjawaban2.png)
