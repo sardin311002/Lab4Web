@@ -289,7 +289,8 @@ pretium ac.</p>
 # Jawaban
 1. Ini Hasil Jawabannya<br>
 Html
-```<div class="about">
+```
+<div class="about">
 			<div>
 				<h1 class="title">About me</h1>
 				<br>
@@ -306,7 +307,8 @@ Html
         </div>
 ```
 Css
-```/* layout About */
+```
+/* layout About */
 .about {
   display: flex;
   align-items: center;
@@ -325,7 +327,8 @@ Css
 ![img](ss/ssjawaban1.png)<br>
 2. Ini Hasilnya Jawabannya<br>
 Html
-```<div class="kontak-body">
+```
+<div class="kontak-body">
             <h1>Contact</h1>
             <form class="kontak-form-class">
               <div class="kontak-form-group">
@@ -356,7 +359,8 @@ Html
               </div>
 ```
 Css
-```/* Layout Kontak */
+```
+/* Layout Kontak */
 .kontak-body {
   margin: 0;
   font-family: -apple-system, Arial, sans-serif;
